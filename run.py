@@ -15,3 +15,14 @@ def lets_play(word):
     print(display_hangman(tries))
     print(word_completion)
     print("\n")
+    while not guessed and tries > 0:
+        guess = input("Please guess a letter or word: ").upper()
+        if len(guess) == 1 and guess.isalpha():
+
+        elif len(guess) == len(word) and guess.isalpha():
+
+        else:
+            print("Not a valid guess.")
+        print(display_hangman(tries))
+        print(word_completion)
+        print("\n")        
