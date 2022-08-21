@@ -121,7 +121,7 @@ No known bugs
 
 - Validator Testing
   - PEP8
-    - No errors were returned from (http://pep8online.com/)
+    - No errors were returned from (http://pep8online.com/checkresult)
 
 
 ## Languages, Frameworks, IDE, Libraries and Programs
