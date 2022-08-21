@@ -7,3 +7,6 @@ __pycache__/
 node_modules/
 .github/
 creds.json
+run2.py
+run3.py
+
