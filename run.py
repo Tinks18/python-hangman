@@ -2,7 +2,7 @@ import random
 from words import word_list
 
 def guess_word():
-    final_word = random.choice(word_list)
+    word = random.choice(word_list)
     return word.upper()
 
 def lets_play(word):
@@ -24,7 +24,7 @@ def lets_play(word):
                 print(guess, "is not in the word.")
                 tries -= 1
                 guessed_letters.append(guess)
-                else:
+            else:
                 print("Good job,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
@@ -36,7 +36,7 @@ def lets_play(word):
                     guessed = True
 
         elif len(guess) == len(word) and guess.isalpha():
-             if guess in guessed_words:
+            if guess in guessed_words:
                 print("You already guessed the word", guess)
             elif guess != word:
                 print(guess, "is not the word.")
@@ -129,3 +129,17 @@ def display_hangman(tries):
                 """
     ]
     return stages[tries]
+
+def main():
+    
+    player_name = input("\n Please enter your name: ")
+    print(" \n Hello  " +  player_name  )
+    word = guess_word()
+    lets_play(word)
+    while input("Play Again? (Y/N) ").upper() == "Y":
+        word = guess_word()
+        lets_play(word)
+
+
+if __name__ == "__main__":
+    main()      
