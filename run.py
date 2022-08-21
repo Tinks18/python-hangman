@@ -1,9 +1,11 @@
 import random
 from words import word_list
 
+
 def guess_word():
     word = random.choice(word_list)
     return word.upper()
+
 
 def lets_play(word):
     word_completion = "_" * len(word)
@@ -28,8 +30,8 @@ def lets_play(word):
                 print("Good job,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
-                for index in indices:
+                inds = [i for i, letter in enumerate(word) if letter == guess]
+                for index in inds:
                     word_as_list[index] = guess
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
@@ -45,7 +47,6 @@ def lets_play(word):
             else:
                 guessed = True
                 word_completion = word
-                
         else:
             print("Not a valid guess.")
         print(display_hangman(tries))
@@ -54,7 +55,8 @@ def lets_play(word):
     if guessed:
         print("Congrats, you guessed the word! You win!")
     else:
-        print("Sorry, you ran out of tries. The word was " + word + ". Maybe next time!")        
+        print("Sorry, you ran out of tries.The word was " + word)
+
 
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
@@ -74,7 +76,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|/
                    |      |
-                   |     / 
+                   |     /
                    -
                 """,
                 # head, torso, and both arms
@@ -84,7 +86,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|/
                    |      |
-                   |      
+                   |
                    -
                 """,
                 # head, torso, and one arm
@@ -94,7 +96,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # head and torso
@@ -104,7 +106,7 @@ def display_hangman(tries):
                    |      O
                    |      |
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # head
@@ -112,28 +114,28 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
                    -
                 """,
                 # initial empty state
                 """
                    --------
                    |      |
-                   |      
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
+                   |
                    -
                 """
     ]
     return stages[tries]
 
+
 def main():
-    
     player_name = input("\n Please enter your name: ")
-    print(" \n Hello  " +  player_name  )
+    print(" \n Hello  " + player_name)
     word = guess_word()
     lets_play(word)
     while input("Play Again? (Y/N) ").upper() == "Y":
@@ -142,4 +144,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()      
+    main()
