@@ -18,6 +18,12 @@ def lets_play(word):
     while not guessed and tries > 0:
         guess = input("Please guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
+            if guess in guessed_letters:
+                print("You already guessed the letter", guess)
+            elif guess not in word:
+                print(guess, "is not in the word.")
+                tries -= 1
+                guessed_letters.append(guess)
 
         elif len(guess) == len(word) and guess.isalpha():
 
