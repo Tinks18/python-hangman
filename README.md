@@ -31,40 +31,36 @@ The Economics Data Analysis Tool is a terminal based application that allows for
 
 ### Project Goals <a name="project-goals"></a>
 
-The main goal for the Economics Data Analysis Tool is to provide a terminal-based application which allows the user to import data from Google Sheets, and complete various calculations with the scope for plotting the data as the end result.
+The main goal for the Hangman is to provide a vocabulary improvement game with hours of fun.
 
-The main target audience for this application is a fictional economist who is interested in analysing various economic data for the UK over the past 10 years. The application would allow for such analysis by completing various calculations and exporting this data back to Google Sheets, as well as allowing the economist to plot data based on their selection. 
+The main target audience for this application is a a user in the age group of 10 and above who is interested in playing various games. The application would allow for such games by completing various calculations and displaying this data back to terminal, as well as allowing the player to play game based on their selection. 
 
 ### User Stories <a name="user-stories"></a>
 
 * __Site User Goals:__
 
-    * I want to import data from Google Sheets.
-    * I want to calculate the total sum for each column of data and update the worksheet.
-    * I want to calculate the average for each column of data and update the worksheet.
-    * I want to calculate the estimate for each column of data for the next year and update the worksheet.
-    * I want to plot the data across all available 'Years' for the selected column inclusive of the estimate data and choose the plot type.
-    * I want to view the underlying data for the plotted output.
+    * I want to play a game in Python terminal 
+    * I want to calculate the correct word.
+    * I want to give error for incrrect guesses.
+    * I want to display you win if the player wins.
+    
 
 * __Site Owner Goals:__
 
-    * I want to provide an application which allows user to import data from Google Sheets.
-    * I want to provide an application which allows for data calculation for imported data (sum, average, estimate).
-    * I want to provide an application which allows user to plot data based on their selection.
-    * I want to provide an application which allows user to view the data selected for the plotting.
+    * I want to provide an application which allows user to play game from python terminal.
+    * I want to provide an application which allows user to have fun.
+    * I want to provide an application which allows user to improve their vovabulary.
+    * I want to provide an application which allows user to view the final result.
 
 
 ## Scope <a name="scope"></a>
 
 To achieve the strategy goals, I want to implement the following features:
 
-* A function which will import the data from Google Sheets.
-* A function which will calculate the total sum and update the worksheet.
-* A function which will calculate the average and update the worksheet.
-* A function which will calculate the estimate for next year and update the worksheet.
-* A function which will allow the user to select column to plot data for y-axis.
-* A function which will allow user to select the plot type from the listed options.
-* A function which will plot data based on the selection and confirm to the user that this has been plotted, in addition displaying the data selected for the plot on the terminal.
+* A function which will ask for user input.
+* A function which will calculate if the word is in the secret word.
+* A function which will calculate updates the word.
+* A function which will calculate the number of tries nad displays hangman picture.
 
 ## Design <a name="design"></a>
 
