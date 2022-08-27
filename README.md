@@ -11,7 +11,7 @@ It all depends on how good your vocabulary is and luck of your guesses to initia
 
 Give it a try!
 
-[Click here to try out the live game/project.](https://HangMan-ms3.herokuapp.com/)
+[Click here to try out the live game/project.](https://hangman-42.herokuapp.com/)
 
 
 
