@@ -1,7 +1,7 @@
 # HangMan Python!
 ## Project Overview
 
-The Economics Data Analysis Tool is a terminal based application that allows for data calculation and plotting using Google Sheets. This has been created as part of my Project 3 for Code Institute.
+The Hangman is a terminal based application that allows for playing word game and display using pyton. This has been created as part of my Project 3 for Code Institute.
 
 ## Table of Contents
 
@@ -225,7 +225,7 @@ This project was published and deplyed using the Code Institute mock teminal for
    - Choose either "Automatic deployment" = which means that every push to the branch you specify will deploy a new version of this app 
    - "Manual deploy" = this will deploy the current state/version of the branch   
 
-The live link can be found here - https://HangMan-ms3.herokuapp.com/
+The live link can be found here - https://hangman-42.herokuapp.com/
 
 
 
