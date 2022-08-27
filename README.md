@@ -190,7 +190,6 @@ I have also utilised the following frameworks, libraries, and tools:
     * Pandas Library has been used to allow for the creation of DataFrames and for plotting data.
 * [Plotext](https://pypi.org/project/plotext/):
     * Plotext has been used to for plotting data in the terminal.
-* [GitPod](https://www.gitpod.io/): 
     * I used GitPod as the IDE for this project and Git has been used for Version Control.
 * [GitHub](https://www.github.com/): 
     * GitHub has been used to create a repository for the project and receive updated commits from GitPod.
@@ -198,10 +197,10 @@ I have also utilised the following frameworks, libraries, and tools:
     * Heroku has been used to create a repository to host the project and receive updated commits from GitPod.
 * [gspread](https://pypi.org/project/gspread/): 
     * gspread has been used to access, update and manipulate data from Google Sheets.
-* [Google Cloud Platform](https://cloud.google.com/): 
-    * Google Cloud Platform has been used for APIs and credentials to be able to access Google Sheets with the relevant data.
-* [World Bank Data](https://data.worldbank.org/): 
-    * World Bank was used as a source of the data for the economic indicators used in this project.
+* [Python random library:](https://docs.python.org/3/library/random.html)
+-  random.randint was used to generate random integer numbers in the game.
+* [[Python:](https://en.wikipedia.org/wiki/History_of_Python)
+- The programming language Python was used.
 * [PEP8 Online Validation Service](http://pep8online.com/): 
     * The PEP8 Online Validation Service was used to validate the Python document for this project and to identify any issues with the code.
 * [StackOverflow](https://stackoverflow.com/): 
@@ -210,26 +209,9 @@ I have also utilised the following frameworks, libraries, and tools:
     * diagrams.net was used to create the flowchart for this project.
 * [Am I Responsive](http://ami.responsivedesign.is/):
     * Am I Responsive was used to create the header image for the README file.
-
-[Python:](https://en.wikipedia.org/wiki/History_of_Python)
-- The programming language Python was used. 
-
-[Python random library:](https://docs.python.org/3/library/random.html)
-- random.randint was used to generate random integer numbers in the game. 
-
-[GitHub:](https://github.com/)
-- GitHub was used to store the projects code after being pushed from Git.
-
-[Visual Studio Code:](https://code.visualstudio.com/)
-- Was used to develop and write my project locally.
-
-[Gitpod:](https://www.gitpod.io/)
-- Was used to complement the development and write my project and push all commits through integrated "git" to Github.
-
-[Heroku:](https://www.heroku.com/what)
-- Was used for deployment of the project live in the cloud.
-
-
+* [Visual Studio Code:](https://code.visualstudio.com/)
+    * Was used to develop and write my project locally.
+ 
 
 ## Deployment
 
