@@ -18,7 +18,7 @@ def lets_play(word):
     print(word_completion)
     print("\n")
     while not guessed and tries > 0:
-        guess = input("Please guess a letter or word: ").upper()
+        guess = input("\n Please guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print("You already guessed the letter", guess)
@@ -138,7 +138,7 @@ def main():
     print(" \n Hello  " + player_name)
     word = guess_word()
     lets_play(word)
-    while input("Play Again? (Y/N) ").upper() == "Y":
+    while input("\n Play Again? (Y/N) ").upper() == "Y":
         word = guess_word()
         lets_play(word)
 

@@ -13,45 +13,46 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('love_hangman')
 
-easy = SHEET.worksheet('easy')
+"""
+to extract values from worksheets
 
-intermediate = SHEET.worksheet('intermediate')
+"""
+easy = SHEET.worksheet('easy')
+data = easy.get_all_values()
+easy =[]
+x = [item for item in easy.col_values(1) if item]
+
+print (list(x))
+
+normal = SHEET.worksheet('normal')
+data1 = normal.get_all_records()
+# print(data1)
 hard = SHEET.worksheet('hard')
-data = easy.get_all_records()
+data2 = hard.get_all_records()
+
+# print(data2)
 
 # val = easy.acell('A2').value
 def sheet_value():
-    x = [item for item in intermediate.col_values(1) if item]
+    
+    x = [item for item in normal.col_values(1) if item]
     return list(x)
 
-secret = random.choice(sheet_value())
-print(secret)
+word = random.choice(sheet_value())
+print(word)
 
+levels = [easy, normal, hard]
 
+# def get_level_data(level):
+#     """
+#     Get level input from the user.
+#     """
+#     print("\n Choose from Levels: Easy , normal, Hard")
 
+#     level = input("\n Please enter level:  ").upper()
+#     print(f"\n The level you chose is {level}")
+#     return level
 
-# list_of_dicts = worksheet.get_all_records()
-# data1 = intermediate.get_all_values()
-# data2 = hard.get_all_values()
-# print(data)
-# print(val)
-# print(data1)
-# print(data2)
+# result = get_level_data(levels)
+# print(result)
 
-def get_level_data():
-    """
-    Get level input from the user.
-    """
-    print("Choose from Levels: Easy , Intermediate, Hard")
-
-    data_str = input("Please enter level:  ").upper()
-    print(f"The level you chose is {data_str}")
-
-# use_sheet = get_level_data()
-
-# def sheet_value():
-#     x = [item for item in use_sheet.col_values(1) if item]
-#     return list(x)
-
-# secret = random.choice(sheet_value())
-# print(secret)
